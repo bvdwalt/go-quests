@@ -7,7 +7,11 @@ different Go value types.
 
 ## Reference
 
-- https://gobyexample.com/hello-world
+- https://gobyexample.com/values
+- https://gobyexample.com/variables
+- https://gobyexample.com/constants
+- https://gobyexample.com/arrays
+- https://gobyexample.com/slices
 
 ### Requirements
 
