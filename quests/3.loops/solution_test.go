@@ -42,7 +42,7 @@ func TestKeepOnlyConsonants(t *testing.T) {
 		input    []string
 		expected []string
 	}{
-		{[]string{"apple", "banana", "cherry"}, []string{"bnn", "chrry"}},
+		{[]string{"apple", "banana", "cherry"}, []string{"ppl", "bnn", "chrry"}},
 		{[]string{"aeiou", "xyz"}, []string{"xyz"}},
 		{[]string{"hello", "world"}, []string{"hll", "wrld"}},
 		{[]string{"AEIOU", "XYZ"}, []string{"XYZ"}},
