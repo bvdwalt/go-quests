@@ -16,6 +16,7 @@ This quest focuses on:
 
 - [Multiple Return Values](https://gobyexample.com/multiple-return-values)
 - [Variadic Functions](https://gobyexample.com/variadic-functions)
+- [Errors](https://gobyexample.com/errors)
 
 ---
 
