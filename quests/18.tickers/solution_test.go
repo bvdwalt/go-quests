@@ -1,4 +1,4 @@
-package selecttimeout
+package tickers
 
 import (
 	"bytes"
@@ -9,24 +9,23 @@ import (
 func TestMain(m *testing.M) {
 	code := m.Run()
 	if code == 0 {
-		println("Success! Completed the select_timeout Quest 🎉")
+		println("Success! Completed the tickers Quest 🎉")
 	}
 	os.Exit(code)
 }
 
-func TestFunctionOrdered(t *testing.T) {
+func TestTicker(t *testing.T) {
 	old := os.Stdout
 	r, w, _ := os.Pipe()
 	os.Stdout = w
-	FunctionOrdered()
-
+	Ticker()
 	w.Close()
 	os.Stdout = old
 
 	var buf bytes.Buffer
 	buf.ReadFrom(r)
 	got := buf.String()
-	want := "from c1\nfrom c4\nfrom c2\nfrom c5\nfrom c3\n"
+	want := "hello\nhello\nworld\nhello\nhello\nworld\nhello\nhello\nworld\n"
 
 	if got != want {
 		t.Fatalf("expected %q, got %q", want, got)

@@ -8,6 +8,8 @@ func FunctionOrdered() {
 	c3 := make(chan string)
 	c4 := make(chan string)
 	c5 := make(chan string)
+	// TODO:Implement go-routines
+	// Read README.md for the instructions
 	go func() {
 
 	}()

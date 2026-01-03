@@ -156,6 +156,15 @@ This quest ensures you can:
 
 ---
 
+## References
+
+These explain the same ideas with examples:
+
+- [https://gobyexample.com/channels](https://gobyexample.com/channels)
+- [https://gobyexample.com/channel-buffering](https://gobyexample.com/channel-buffering)
+
+---
+
 ## Running the Tests
 
 Once implemented, run:

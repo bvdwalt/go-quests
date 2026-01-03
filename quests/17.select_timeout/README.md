@@ -95,6 +95,15 @@ If the order changes, the timing logic is incorrect.
 
 ---
 
+## References
+
+These explain the same ideas with examples:
+
+- [https://gobyexample.com/select](https://gobyexample.com/select)
+- [https://gobyexample.com/timeouts](https://gobyexample.com/timeouts)
+
+---
+
 ## Running the Tests
 
 Once implemented, run:
