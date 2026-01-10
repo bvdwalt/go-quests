@@ -1,4 +1,4 @@
-# Go Quests [![Star on GitHub](https://img.shields.io/github/stars/lite-quests/go-quests?style=social)](https://github.com/lite-quests/go-quests)
+# Go Quests
 
 
 A beginner-friendly set of small Go exercises (“quests”). Each quest is intentionally small so you can practice one Go concept at a time.
