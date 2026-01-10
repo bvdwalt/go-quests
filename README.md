@@ -3,7 +3,7 @@
 
 ![Go Quests banner](https://images.steamusercontent.com/ugc/964242373533560541/F1BD3729A9743D8D062FE780774044B192356454/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false)
 
-<p align="center"><strong>If these quests helped you learn Go, please consider starring the repo.</strong></p>
+<p align="center"><strong>⭐ If these quests helped you learn Go, please consider starring the repo.</strong></p>
 
 
 
@@ -15,9 +15,10 @@ You implement functions in `solution.go` and confirm correctness with unit tests
 
 ### Requirements
 
-- **Golang** (Install from the official site: <https://go.dev/dl/>)
-- **Visual Studio Code** (Install from the official site: <https://code.visualstudio.com/download>)
-- **Git** (optional, but recommended: <https://git-scm.com/install/>)
+- [Golang](https://go.dev/dl/) (install from the official site)
+- [Visual Studio Code](https://code.visualstudio.com/download) (install from the official site)
+- [VS Code Go extension](https://marketplace.visualstudio.com/items?itemName=golang.Go)
+- [Git](https://git-scm.com/install/) (optional, but recommended)
 
 
 Check your Go version: 
@@ -96,6 +97,9 @@ This repo is designed so that tests teach you the spec: make changes → run tes
 - **Avoid changing test files**
   If tests don’t pass, fix `solution.go` (the tests define the requirements).
 
+- **Disable AI assistance while solving**
+  You’ll learn faster if you struggle a bit, read the errors, and look things up in the Go docs. Use AI only after you’ve made a real attempt.
+
 - **Prefer the intended concept over “test hacks”**  
   You might find a workaround that passes the tests, but the goal is to practice the concept the quest is designed to teach (the quest README will usually hint what to use) so please stick to it.
 
@@ -125,5 +129,5 @@ This repo is designed so that tests teach you the spec: make changes → run tes
 ### Contact
 
 For any issues, contact either:
-- <https://x.com/mani_yadla_>
-- <https://x.com/AnanyaPappula>
+- [Mani Yadla](https://x.com/mani_yadla_)
+- [Ananya Pappula](https://x.com/AnanyaPappula)
