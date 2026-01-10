@@ -1,6 +1,12 @@
 # Go Quests
 
 
+![Go Quests banner](https://images.steamusercontent.com/ugc/964242373533560541/F1BD3729A9743D8D062FE780774044B192356454/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false)
+
+<p align="center"><strong>If these quests helped you learn Go, please consider starring the repo.</strong></p>
+
+
+
 A beginner-friendly set of small Go exercises (“quests”). Each quest is intentionally small so you can practice one Go concept at a time.
 
 You implement functions in `solution.go` and confirm correctness with unit tests in `solution_test.go`.
@@ -9,9 +15,9 @@ You implement functions in `solution.go` and confirm correctness with unit tests
 
 ### Requirements
 
-- **Golang** (Install from the official site: `https://go.dev/dl/`)
-- **Visual Studio Code** (Install from the official site: `https://code.visualstudio.com/download`)
-- **Git** (optional, but recommended: `https://git-scm.com/install/`)
+- **Golang** (Install from the official site: <https://go.dev/dl/>)
+- **Visual Studio Code** (Install from the official site: <https://code.visualstudio.com/download>)
+- **Git** (optional, but recommended: <https://git-scm.com/install/>)
 
 
 Check your Go version: 
@@ -25,6 +31,9 @@ go version
 ### Get the repo (two ways)
 
 **Option A: Clone with Git (recommended)**
+
+Repo: <https://github.com/lite-quests/go-quests>
+
 1. Open Visual studio code.
 2. File → Open Folder → Select the folder where you want the repository to reside.
 2. Toolbar → Terminal → New Terminal
@@ -35,7 +44,7 @@ cd go-quests # This command helps you go into the quest directory from the termi
 ```
 
 **Option B: Download ZIP (no Git required)**
-1. Open the repo on GitHub: `https://github.com/lite-quests/go-quests`
+1. Open the repo on GitHub: <https://github.com/lite-quests/go-quests>
 2. Click **Code** → **Download ZIP**
 3. Unzip the file
 4. Visual Studio Code → Open Folder → Select the extracted/unzipped folder
@@ -109,15 +118,12 @@ This repo is designed so that tests teach you the spec: make changes → run tes
   Clear the test cache:
   ```sh
   go clean -testcache
----
-
-### Support
-If these quests helped you learn Go, please consider starring the repo.
+  ```
 
 ---
 
 ### Contact
 
 For any issues, contact either:
-- `yadlamaniymn2005@gmail.com`
-- `ananyapappula2004@gmail.com`
+- <https://x.com/mani_yadla_>
+- <https://x.com/AnanyaPappula>
