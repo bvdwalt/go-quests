@@ -1,14 +1,32 @@
 package loops
 
+import "strings"
+
 func SumEvenNumbers(n int) int {
-	// TODO: implement
-	// Read README.md for the instructions
-	return 0
+	sum := 0
+	for i := 0; i <= n; i++ {
+		if i%2 == 0 {
+			sum += i
+		}
+	}
+	return sum
 }
 
 func KeepOnlyConsonants(strs []string) []string {
 	res := []string{}
-	// TODO: implement
-	// Read README.md for the instructions
+	for _, s := range strs {
+		strResult := ""
+		for _, char := range s {
+			switch strings.ToLower(string(char)) {
+			case "a", "e", "i", "o", "u":
+				continue
+			default:
+				strResult += string(char)
+			}
+		}
+		if strResult != "" {
+			res = append(res, strResult)
+		}
+	}
 	return res
 }
