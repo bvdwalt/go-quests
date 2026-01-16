@@ -5,10 +5,7 @@ type User struct {
 	Age  int
 }
 
-// example
-// str:="Hello"
-// num:=42
-// return Result{Str:str, Int:num}
+var ptrValue = 10
 
 type Result struct {
 	Str     string             // str:="hello"
@@ -26,7 +23,23 @@ type Result struct {
 }
 
 func BuildValues() Result {
-	// TODO: implement
-	// Read README.md for the instructions
-	return Result{}
+	return Result{
+		Str:   "go",
+		Int:   42,
+		Float: 3.14,
+		Bool:  true,
+		Array: [3]int{1, 2, 3},
+		Slice: []int{4, 5, 6, 7},
+		Map:   map[string]int{"apple": 2, "banana": 5},
+		User: User{
+			Name: "Alice",
+			Age:  20,
+		},
+		Ptr: &ptrValue,
+		AddFn: func(a int, b int) int {
+			return a + b
+		},
+		Any:     100,
+		ZeroMap: nil,
+	}
 }
