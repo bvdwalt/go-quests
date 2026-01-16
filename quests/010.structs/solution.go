@@ -1,5 +1,7 @@
 package structs
 
+import "fmt"
+
 type User struct {
 	ID    int
 	Name  string
@@ -8,33 +10,35 @@ type User struct {
 }
 
 func NewUser(id int, name, email string, age int) *User {
-	// TODO: implement
-	// Read README.md for the instructions
-	return nil
+	return &User{
+		ID:    id,
+		Name:  name,
+		Email: email,
+		Age:   age,
+	}
 }
 
 func (u *User) IsAdult() bool {
-	// TODO: implement
-	// Read README.md for the instructions
-	return false
+	return u.Age >= 18
 }
 
 func (u User) DisplayName() string {
-	// TODO: implement
-	// Read README.md for the instructions
-	return ""
+	return fmt.Sprintf("%s <%s>", u.Name, u.Email)
 }
 
 func (u *User) UpdateEmail(email string) {
-	// TODO: implement
-	// Read README.md for the instructions
+	u.Email = email
 }
 
 func (u *User) Birthday() {
-	// TODO: implement
-	// Read README.md for the instructions
+	u.Age++
 }
 
 func CloneUser(u User) User {
-	return User{}
+	return User{
+		ID:    u.ID,
+		Name:  u.Name,
+		Email: u.Email,
+		Age:   u.Age,
+	}
 }
