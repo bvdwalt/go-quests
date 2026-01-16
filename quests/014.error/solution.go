@@ -1,9 +1,15 @@
 package error
 
+import (
+	"errors"
+	"fmt"
+	"strings"
+)
+
 // Part 1: Define sentinel errors
 var (
-// TODO: Define ErrEmptyFilename
-// TODO: Define ErrFileTooLarge
+	ErrEmptyFilename error = errors.New("filename cannot be empty")
+	ErrFileTooLarge  error = errors.New("file size exceeds limit")
 )
 
 // Part 2: Define custom error type
@@ -14,34 +20,58 @@ type ValidationError struct {
 
 // TODO: Implement Error() method
 func (ve *ValidationError) Error() string {
-	return ""
+	return fmt.Sprintf("validation failed for '<%s>': '<%s>'", ve.Filename, ve.Reason)
 }
 
 // Part 3: Validation functions
 
 func ValidateFilename(filename string) error {
-	// TODO: Implement
+	if filename == "" {
+		return ErrEmptyFilename
+	}
 	return nil
 }
 
 func ValidateFileSize(size int64, maxSize int64) error {
-	// TODO: Implement
+	if size < 0 {
+		return errors.New("file size cannot be negative")
+	} else if size > maxSize {
+		return ErrFileTooLarge
+	}
 	return nil
 }
 
 func ValidateFileExtension(filename string, allowedExts []string) error {
-	// TODO: Implement
-	return nil
+	for _, extension := range allowedExts {
+		if strings.HasSuffix(filename, extension) {
+			return nil
+		}
+	}
+
+	return &ValidationError{
+		Filename: filename,
+		Reason:   "unsupported file extension",
+	}
 }
 
 func ValidateFile(filename string, size int64, maxSize int64) error {
-	// TODO: Implement
+	if err := ValidateFilename(filename); err != nil {
+		return errors.Join(err, errors.New("file validation failed"))
+	}
+
+	if err := ValidateFileSize(size, maxSize); err != nil {
+		return errors.Join(err, errors.New("file validation failed"))
+	}
 	return nil
 }
 
 // Part 4: Error checking
 
 func CanRetry(err error) bool {
-	// TODO: Implement
+	var ve *ValidationError
+	if errors.As(err, &ve) {
+		return true
+	}
+
 	return false
 }
